@@ -42,4 +42,31 @@ nav {
 .list-links li a {
     color: var(--text-second-color);
     text-decoration: none;
+    font-weight: var(--text-weight);
+    font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    .navgation-menu {
+        margin-top: 0;
+    }
+    .navgation-menu label {
+        display: none;
+    }
+
+    .navgation-menu ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 468px;
+    }
+
+    .navgation-menu nav {
+        display: block;
+    }
+
+    .navgation-menu li {
+        margin: 0;
+    }
 }
